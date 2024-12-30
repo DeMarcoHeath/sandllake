@@ -23,7 +23,7 @@ function launchApp(command) {
 // Function to automate Edge using Puppeteer
 async function automateEdge() {
     const browser = await puppeteer.launch({
-        executablePath: 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe', // Adjust for your Edge path
+        executablePath: 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk', // Adjust for your Edge path
         headless: true,
     });
     const page = await browser.newPage();
